@@ -47,4 +47,52 @@ function isString (name){
     const isValid = typeof str === 'string';
     return isValid;
 }
-.
+
+// 4. Функции высшего порядка
+
+let nums = [1, 2, 3, 4, 5];
+
+function copyArrayAndDoSmth(arr, instructions){
+    const output = [];
+    for (let i = 0; i < arr.length; i++){
+        output.push(instructions(arr[i]));
+
+    }
+    return output;
+}
+
+// instructions - колбек, инструкция, которую принимает функция для выполнения определенных операций
+
+
+function add1(num){
+    return num++;
+}
+
+function numSquared(num){
+    return num**2;
+}
+
+const copyArrAndAdd1 = copyArrayAndDoSmth(nums, add1);
+const copyArrAndNumSquared = copyArrayAndDoSmth(nums, numSquared);
+
+// Рекурсия
+// 1. Базовое условие
+// 2. Правило движения по рекурсии
+
+function factorial(n){
+    if(n === 0) return 1;
+    return n * factorial(n-1);
+}
+
+// Принимает символ и возвращает этот символ в 5 экземплярах
+
+let counter = 0;
+
+function repeater(char){
+    counter++;
+
+    if(counter === 5){
+        return char;
+    }
+    return char + repeater(char);
+}
