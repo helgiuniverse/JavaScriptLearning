@@ -75,7 +75,7 @@ function numSquared(num){
 const copyArrAndAdd1 = copyArrayAndDoSmth(nums, add1);
 const copyArrAndNumSquared = copyArrayAndDoSmth(nums, numSquared);
 
-// Рекурсия
+// 5. Рекурсия
 // 1. Базовое условие
 // 2. Правило движения по рекурсии
 
@@ -96,3 +96,14 @@ function repeater(char){
     }
     return char + repeater(char);
 }
+
+// 6. Замыкание
+
+function addByX (x){
+    function addByY (y){
+        return x+y;
+    }
+    return addByY;
+}
+
+//Функция возвращает функцию 
