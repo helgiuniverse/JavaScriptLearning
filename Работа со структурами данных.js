@@ -36,3 +36,24 @@ const add1 = x => x++;
 arr.forEach(Add1);
 
 const arrAdd1 = arr.map(add1);
+
+// 5.3 Фильтрация массивов
+
+const nums = [1,2,3,4,5];
+
+
+
+const oddNums = nums.filter(x => x%2 !=== 0);
+
+// 5.4 Метод reduce
+
+staff.reduce((acc,user) =>{
+    return acc + user.salary;
+},0)
+
+// 5.5 Поиск в коллекции
+
+const frontendDevelopers = developers.find(item => item.area === 'frontend');
+
+
+
