@@ -55,5 +55,154 @@ staff.reduce((acc,user) =>{
 
 const frontendDevelopers = developers.find(item => item.area === 'frontend');
 
+const players = [
+    {
+        id: 1,
+        name: 'Andres',
+        surname: 'Iniesta',
+        club: 'Vissel Cobe',
+    },
+    {
+        id: 2,
+        name: 'Eden',
+        surname: 'Hazard',
+        club: 'Real Madrid',
+    },
+    {
+        id: 3,
+        name: 'Mo',
+        surname: 'Salah',
+        club: 'Liverpool',
+    },
+    {
+        id: 4,
+        name: 'Lionel',
+        surname: 'Messi',
+        club: 'Barcelona',
+    },
+];
+
+const messi = players.find((player) => player.surname === 'Messi');
+
+// 5.6 Сортировка массивов
+
+const food = ["Apple", "Melon", "Banana", "Yogurt", "Orange", "Stawberry"];
+
+const players = [
+    {
+        id: 1,
+        name: 'Cristiano',
+        surname: 'Ronaldo',
+        club: 'Juventus',
+    },
+    {
+        id: 2,
+        name: 'Lionel',
+        surname: 'Messi',
+        club: 'Barcelona',
+    },
+    {
+        id: 3,
+        name: 'Karim',
+        surname: 'Benzema',
+        club: 'Real Madrid',
+    },
+    {
+        id: 4,
+        name: 'Maxi',
+        surname: 'Gomez',
+        club: 'Valencia',
+    },
+    {
+        id: 5,
+        name: 'Quincy',
+        surname: 'Promes',
+        club: 'Spartak',
+    },
+];
+function sorting (a,b){
+    if(a>b){
+        return 3;
+    }
+    if(a<b){
+        return -1;
+    }
+    return 0;
+}
+food.sort((a,b) => sorting(a,b));
+players.sort((a,b) => sorting(a.surname, b.surname));
+
+// 5.7 Деструктуризация массивов
+
+
+const cities = ['Amster', 'Madrid', 'Paris', 'London', 'Berlin'];
+
+const [amst, , paris, ...tail] = cities;
+
+function getInfo() {
+    return ['BMW', 'X3'];
+}
+
+const [carName, carSeries] = getInfo();
+
+//  5.8 Деструктуризация объекта
+
+const link = {
+    href: '#',
+    title: 'simple link',
+    target: 'blank',
+    className: 'link',
+    id: null,
+    children: {
+        span: {
+            content: 'Click me',
+            className: 'anchor',
+        },
+    },
+};
+
+const {
+    target,
+    className,
+} = link;
+
+const {
+    content,
+    className : renamed
+} = link.children.span;
+
+// 5.9 JSON - JS obj notation
+
+const players = [
+    {
+        id: 1,
+        name: 'Andres',
+        surname: 'Iniesta',
+        club: 'Vissel Cobe',
+    },
+    {
+        id: 2,
+        name: 'Eden',
+        surname: 'Hazard',
+        club: 'Real Madrid',
+    },
+    {
+        id: 3,
+        name: 'Mo',
+        surname: 'Salah',
+        club: 'Liverpool',
+    },
+    {
+        id: 4,
+        name: 'Lionel',
+        surname: 'Messi',
+        club: 'Barcelona',
+    },
+];
+
+
+const jsonPlayers = JSON.stringify(players);
+
+const a =  JSON.parse(o);
 
 

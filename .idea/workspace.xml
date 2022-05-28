@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cdaec38-0262-4045-a488-ab6a1a84be36" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Работа со структурами данных.js" beforeDir="false" afterPath="$PROJECT_DIR$/Работа со структурами данных.js" afterDir="false" />
     </list>
@@ -64,7 +63,7 @@
       <workItem from="1652267261782" duration="3953000" />
       <workItem from="1652357800475" duration="2022000" />
       <workItem from="1652701499089" duration="124000" />
-      <workItem from="1652774621705" duration="786000" />
+      <workItem from="1652774621705" duration="1775000" />
     </task>
     <servers />
   </component>
